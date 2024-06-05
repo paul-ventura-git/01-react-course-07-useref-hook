@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Chart } from 'chart';
+import { Chart } from 'chart.js';
 
 /**
  * Chart component
