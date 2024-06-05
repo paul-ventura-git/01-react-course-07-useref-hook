@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
- 
-export const CustomInput = () => {
+
+// Mutable vs immutable ref
+// Third part libraries
+export const CustomInput2 = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
  
   useEffect(() => {
@@ -14,6 +16,7 @@ export const CustomInput = () => {
  
   const onKeyPress = () => {
     /* Handle input key press */
+    console.log("printing...")
   };
  
   return (
