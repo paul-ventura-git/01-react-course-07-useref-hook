@@ -18,7 +18,7 @@ function App() {
       <h1>3: Storing unmanaged values</h1>
       <StoringUnmanagedValues></StoringUnmanagedValues>
       <h1>4: Third party libraries</h1>
-      <ThirdPartyLibraries data={[3]}></ThirdPartyLibraries>
+      <ThirdPartyLibraries data={[3,5,9,8,25]}></ThirdPartyLibraries>
     </>
   )
 }

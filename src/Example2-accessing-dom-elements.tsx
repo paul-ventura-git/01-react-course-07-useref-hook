@@ -11,5 +11,10 @@ export function AccessingDOMElements() {
     inputRef.current?.focus();
   }, []);
 
-  return <input ref={inputRef} />;
+  return (
+    <>
+      <p>The input starts with the focus on.</p>
+      <input ref={inputRef} />
+    </>
+  )
 }
