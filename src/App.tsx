@@ -11,18 +11,14 @@ function App() {
 
   return (
     <>
-      <Example1></Example1>
       <h1>1: Accesing DOM elements</h1>
       <AccessingDOMElements></AccessingDOMElements>
       <h1>2: Storing previous values</h1>
       <StoringPreviousValues value={3}></StoringPreviousValues>
       <h1>3: Storing unmanaged values</h1>
       <StoringUnmanagedValues></StoringUnmanagedValues>
-      <h1>3: Third party libraries</h1>
+      <h1>4: Third party libraries</h1>
       <ThirdPartyLibraries data={[3]}></ThirdPartyLibraries>
-
-      <CustomInput></CustomInput>
-      <CustomInput2></CustomInput2>
     </>
   )
 }

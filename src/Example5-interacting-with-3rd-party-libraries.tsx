@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Chart } from 'chart.js';
+import { Chart, registerables  } from 'chart.js/auto';
 
 /**
  * Chart component
@@ -9,7 +9,7 @@ import { Chart } from 'chart.js';
 export function ThirdPartyLibraries(props: { data: number[] }) {
   const chartRef = useRef<HTMLCanvasElement | null>(null);
   const chartInstance = useRef<Chart | null>(null);
-
+  Chart.register(...registerables);
   useEffect(() => {
     if (chartRef.current) {
       chartInstance.current = new Chart(chartRef.current, {
